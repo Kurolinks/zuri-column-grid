@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+*/main {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+a {
+  	display: inline-block;
+  	color: blue;
+  	padding: 8px 16px;
+  	text-decoration: none;
+}
+
+a:hover {
+  background-color: #555;
+  color: white;
+}
+h2 {
+	color: hsl(0, 0%, 95%);
+	Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display);
+	font-weight: 700px;
+}
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+	Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca);
+	flex-grow: 1;
+	font-size: 15px;
+	font-weight: 400px;
+	text-align: left;
+}
+.flex-container {
+			border-radius: 10px;
+			display: flex;
+			overflow: hidden;
+			width: 800px;
+}
+.item {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 40px;
+}
+
+.left{
+	background-color: hsl(31, 77%, 52%);
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+.center{
+	background-color: hsl(184, 100%, 22%);
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+.right{
+	background-color: hsl(179, 100%, 13%);
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+		
+button {
+	background-color: hsl(0, 0%, 95%);
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	outline: none;
+	padding: 15px 30px;
+}
+.item button:hover {
+	background-color: transparent;
+	border: 2px solid hsl(0, 0%, 95%);
+	color: hsl(0, 0%, 95%);
+	padding: 13px 28px;
+}
+
+.left button {
+			color: hsl(31, 77%, 52%);
+}
+.center button{
+			color: hsl(184, 100%, 22%);
+}
+
+.right button {
+			color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 370px) {
+	body{
+		padding: 70px 30px;
+		
+	}
+	.item {
+		flex-direction: rcolumn;
+	}
+}
